@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const input = document.getElementById('new-heading');
-    const btn = document.getElementById('update-btn');
-    const heading = document.getElementById('cta-heading');
+    const emailinput = document.getElementById('email-input');
+    const SubscribeBtn = document.getElementById('subscribe-btn');
+    const message = document.getElementById('message');
 
-    if (!input || !btn || !heading) return;
+    if (!emailinput || !SubscribeBtn || !message) return;
 
-    btn.addEventListener('click', () => {
-        const newItem = input.value.trim();
+    SubscribeBtn.addEventListener('click', () => {
+        const newItem = emailinput.value.trim();
         if (newItem) {
-            heading.textContent = newItem;
-            input.value = '';
-            input.placeholder = 'Headline Updated!';
+            message.textContent = newItem;
+            emailinput.value = '';
+            emailinput.placeholder = 'Email subscribed!';
         } else {
-            input.placeholder = 'Please enter a headline!';
+            emailinput.placeholder = 'Please enter a valid email address!';
         }
     });
 });
 
-input.addEventListener('input', () => {
+emailinput.addEventListener('input', () => {
     if (e.key === 'Enter') {
         btn.click();
     }
