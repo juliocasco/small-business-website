@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const input = document.getElementById('new-item');
-    const btn = document.getElementById('add-btn');
+    const input = document.getElementById('new-heading');
+    const btn = document.getElementById('update-btn');
     const heading = document.getElementById('cta-heading');
 
     if (!input || !btn || !heading) return;
