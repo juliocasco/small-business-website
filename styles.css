@@ -148,7 +148,7 @@ nav a:hover {
     padding: 50px 20px;
 }
 
-.cta-update input[type="text"] {
+.cta-update input[type="email"] {
     padding: 10px;
     width: 300px;
     max-width: 100%;
@@ -168,6 +168,13 @@ nav a:hover {
 }
 .cta-update button:hover {
     background-color: #e76f51;
+}
+
+#message.success {
+    color: #aed581;
+}
+#message.error {
+    color: #ef5350;
 }
 
 /* Footer */
